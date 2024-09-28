@@ -8,17 +8,21 @@
     <title>Laravel Model Controller</title>
 
     @vite('resources/js/app.js')
+    {{-- Collegamento ai file JS e CSS tramite Vite --}}
 </head>
 
 <body>
     <div class="layout">
         @include('partials.header')
+        {{-- Include il file header --}}
 
         <main>
             @yield('content')
+            {{-- Sezione per inserire il contenuto specifico delle pagine --}}
         </main>
 
         @include('partials.footer')
+        {{-- Include il file footer --}}
     </div>
 </body>
 

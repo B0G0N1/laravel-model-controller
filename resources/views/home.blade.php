@@ -1,7 +1,10 @@
 @extends('layouts.app')
+{{-- Estende il layout principale chiamato "app" --}}
 
 @section('content')
+    {{-- Sezione che definisce il contenuto della pagina --}}
     <div class="container">
+        {{-- Contenitore principale --}}
         <div class="row">
             <div class="col-md-12">
                 <table class="table table-hover table-striped">
@@ -17,6 +20,7 @@
                     </thead>
                     <tbody>
                         @foreach ($movies as $movie)
+                            {{-- Ciclo per mostrare ogni film nella tabella --}}
                             <tr>
                                 <td>{{ $movie->id }}</td>
                                 <td>{{ $movie->title }}</td>

@@ -19,3 +19,4 @@ use App\Http\Controllers\Guest\PageController as PageController;
 // });
 
 Route::get('/', [PageController::class, 'homepage'])->name('homepage');
+// Definisce la rotta per la homepage, usa il metodo 'homepage' del PageController
